@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Decision Trees</title>
+    <style>
+    #container {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: -1;
+    }
+
+    form {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 320px;
+      margin: 10px;
+    }
+
+    textarea {
+      width: 100%;
+    }
+</style>
+  </head>
+  <body>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/2.7.10/cytoscape.min.js"></script>
+    <form>
+      <textarea rows="20" id="input" placeholder="Enter structure in plain text"></textarea>
+      <br>
+      <button type="button" id="submit">Submit</button>
+    </form>
+    <div id="container"></div>
+    <script src="./sample-input.js"></script>
+    <script src="./dt.js"></script>
+    <script src="./inputParser.js"></script>
+    <script src="./graph.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
